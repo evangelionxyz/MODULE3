@@ -78,7 +78,7 @@ namespace Modul3_103022300164
                 return;
             }
 
-            if (Tb_In.Text == "" || Tb_Out.Text == "")
+            if (Tb_In.Text == "")
             {
                 MessageBox.Show("Masukkan angka yang valid!", "Invalid input");
                 return;
