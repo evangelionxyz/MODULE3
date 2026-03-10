@@ -72,6 +72,18 @@ namespace Modul3_103022300164
             Cb_Unit_In.Text = Cb_Unit_In.Text.ToLower();
             Cb_Unit_Out.Text = Cb_Unit_Out.Text.ToLower();
 
+            if (Cb_Unit_Out.Text == "" || Cb_Unit_In.Text == "")
+            {
+                MessageBox.Show("Pilih satuan terlebih dahulu!", "Invalid unit");
+                return;
+            }
+
+            if (Tb_In.Text == "" || Tb_Out.Text == "")
+            {
+                MessageBox.Show("Masukkan angka yang valid!", "Invalid input");
+                return;
+            }
+
             if (Cb_Unit_In.Text == "celcius")
             {
                 if (Cb_Unit_Out.Text == "fahrenheit")
